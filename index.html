@@ -29,7 +29,32 @@
 	document.getElementsByTagName( 'head' )[0].appendChild( link );
 	</script>
 	<style>
-		.reveal {
+		.inline {
+			display: flex;
+
+		}
+		.inline > div {
+			flex: 1;
+		}
+		.team {
+			margin-top: 60px;
+		}
+		.team > div {
+			display: flex;
+			justify-content: center;
+		}
+		.team > div > div {
+			padding: 10px;
+		}
+		.team > div > div > img {
+			height: 150px;
+			-webkit-filter: grayscale(1);
+			border-radius: 75px;
+		}
+		.socle > div > div > img {
+			border: none;
+			box-shadow: none;
+			height: 300px;
 		}
 	</style>
 
@@ -67,16 +92,16 @@
 				<section>
 					<h3>Nouveaux usages du Web</h3>
 					<p>Le Web est omniprésent dans nos vies actuelles</p>
-					<div style='display: flex'>
-						<div style='flex: 1'>
+					<div class='inline'>
+						<div>
 							<img data-src='assets/images/airbnb.PNG'/>
 							<h4>Airbnb</h4>
 						</div>
-						<div style='flex: 1'>
+						<div>
 							<img data-src='assets/images/inbox.PNG'/>
 							<h4>Google Inbox</h4>
 						</div>
-						<div style='flex: 1'>
+						<div>
 							<img data-src='assets/images/capitaine.PNG'/>
 							<h4>Capitaine train</h4>
 						</div>
@@ -89,12 +114,12 @@
 				</section>
 				<section>
 					<h3>Un écart entre le privé et le professionnel</h3>
-					<div style='display: flex'>
-						<div style='flex: 1'>
+					<div class='inline'>
+						<div>
 							<img data-src='assets/images/whatsapp.PNG'/>
 							<h4>Privé</h4>
 						</div>
-						<div style='flex: 1'>
+						<div>
 							<img data-src='assets/images/trackit_avant.PNG'/>
 							<h4>Professionnel</h4>
 						</div>
@@ -106,12 +131,12 @@
 				<h2>La réponse de <b>Focus</b></h2>
 				<section>
 					<h3>Replacer l'utilisateur au centre</h3>
-					<div style='display: flex'>
-						<div style='flex: 1'>
+					<div class='inline'>
+						<div>
 							<img data-src='assets/images/trackit_avant.PNG'/>
 							<h4>Avant</h4>
 						</div>
-						<div style='flex: 1'>
+						<div>
 							<img data-src='assets/images/trackit_apres.PNG'/>
 							<h4>Après</h4>
 						</div>
@@ -126,37 +151,37 @@
 						<li>Un framework Javascript et des extensions techniques</li>
 					</ul>
 				</section>
-				<section style='margin-top: 60px'>
+				<section class='team' style='margin-top: 60px'>
 					<h3>Au moyen d'une équipe pluridisciplinaire</h3>
-					<div style='display: flex; justify-content: center'>
-						<div style='padding: 10px'>
-							<img data-src='assets/images/corinne.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
+					<div>
+						<div>
+							<img data-src='assets/images/corinne.png'/>
 							<h4>Corinne</h4>
 						</div>
-						<div style='padding: 10px'>
-							<img data-src='assets/images/florence.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
+						<div>
+							<img data-src='assets/images/florence.png'/>
 							<h4>Florence</h4>
 						</div>
-						<div style='padding: 10px'>
-							<img data-src='assets/images/nadege.jpg' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
+						<div>
+							<img data-src='assets/images/nadege.jpg'/>
 							<h4>Nadège</h4>
 						</div>
-						<div style='padding: 10px'>
-							<img data-src='assets/images/nico.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
+						<div>
+							<img data-src='assets/images/nico.png'/>
 							<h4>Nicolas</h4>
 						</div>
 					</div>
-					<div style='display: flex; justify-content: center'>
-						<div style='padding: 10px'>
-							<img data-src='assets/images/pierre.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
+					<div>
+						<div>
+							<img data-src='assets/images/pierre.png'/>
 							<h4>Pierre</h4>
 						</div>
-						<div style='padding: 10px'>
-							<img data-src='assets/images/stan.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
+						<div>
+							<img data-src='assets/images/stan.png'/>
 							<h4>Stanislas</h4>
 						</div>
-						<div style='padding: 10px'>
-							<img data-src='assets/images/thomas.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
+						<div>
+							<img data-src='assets/images/thomas.png'/>
 							<h4>Thomas</h4>
 						</div>
 					</div>
@@ -167,27 +192,27 @@
 				<h2>De quoi est fait <b>Focus</b> ?</h2>
 				<section>
 					<h3>Des maquettes de conception</h3>
-					<div style='display: flex'>
-						<div style='flex: 1'>
+					<div class='inline'>
+						<div>
 							<img data-src='assets/images/maquette_1.PNG'/>
 						</div>
-						<div style='flex: 1'>
+						<div>
 							<img data-src='assets/images/maquette_2.PNG'/>
 						</div>
-						<div style='flex: 1'>
+						<div>
 							<img data-src='assets/images/maquette_3.PNG'/>
 						</div>
 					</div>
 				</section>
-				<section>
+				<section class='socle'>
 					<h3>Un socle de développement</h3>
-					<div style='display: flex'>
-						<div style='flex: 1'>
-							<img data-src='assets/images/reactjs.png' style='border: none; box-shadow: none; height: 300px'/>
+					<div class='inline'>
+						<div>
+							<img data-src='assets/images/reactjs.png'/>
 							<h4>React</h4>
 						</div>
-						<div style='flex: 1'>
-							<img data-src='assets/images/js.png'style='border: none; box-shadow: none; height: 300px'/>
+						<div>
+							<img data-src='assets/images/js.png'/>
 							<h4>Javascript</h4>
 						</div>
 					</div>
@@ -207,12 +232,12 @@
 				</section>
 				<section>
 					<h3>En open-source</h3>
-					<div style='display: flex'>
-						<div style='flex: 1'>
+					<div class='inline'>
+						<div>
 							<img data-src='assets/images/github-core.PNG' style='height: 300px'/>
 							<h4>Focus Core</h4>
 						</div>
-						<div style='flex: 1'>
+						<div>
 							<img data-src='assets/images/github-components.PNG' style='height: 300px'/>
 							<h4>Focus Components</h4>
 						</div>
@@ -240,23 +265,23 @@
 					<iframe src='assets/showcase/index.html' style='width: 1280px; height: 600px'>
 					</iframe>
 				</section>
-				<section>
+				<section class='socle'>
 					<h3>Outils de développement</h3>
-					<div style='display: flex'>
-						<div style='flex: 1'>
-							<img data-src='assets/images/eslint.png' style='border: none; box-shadow: none; height: 300px'/>
+					<div class='inline'>
+						<div>
+							<img data-src='assets/images/eslint.png'/>
 							<h4>ESLint</h4>
 						</div>
-						<div style='flex: 1'>
-							<img data-src='assets/images/webpack.svg'style='border: none; box-shadow: none; height: 300px'/>
+						<div>
+							<img data-src='assets/images/webpack.svg'/>
 							<h4>Webpack</h4>
 						</div>
-						<div style='flex: 1'>
-							<img data-src='assets/images/brunch.svg'style='border: none; box-shadow: none; height: 300px'/>
+						<div>
+							<img data-src='assets/images/brunch.svg'/>
 							<h4>Brunch</h4>
 						</div>
-						<div style='flex: 1'>
-							<img data-src='assets/images/babel.png'style='border: none; box-shadow: none; height: 300px'/>
+						<div>
+							<img data-src='assets/images/babel.png'/>
 							<h4>Babel</h4>
 						</div>
 					</div>
