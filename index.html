@@ -28,6 +28,10 @@
 	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 	document.getElementsByTagName( 'head' )[0].appendChild( link );
 	</script>
+	<style>
+		.reveal {
+		}
+	</style>
 
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
@@ -51,7 +55,7 @@
 			<section>
 				<h2>En résumé</h2>
 				<p>
-					<b>Focus</b> est une solution interne à <i>Klee</i> de production d'applications web modernes, dans la lignée des géants du Web.
+					<b>Focus</b> est une solution interne à <i>Klee</i> de production d'applications web modernes, inspirée par les géants du Web.
 				</p>
 				<p>
 					Découpée sous forme de plusieurs outils, cette solution accompagne les projets de <i>Klee</i> depuis la conception jusqu'à la livraison au client.
@@ -122,30 +126,36 @@
 						<li>Un framework Javascript et des extensions techniques</li>
 					</ul>
 				</section>
-				<section>
+				<section style='margin-top: 60px'>
 					<h3>Au moyen d'une équipe pluridisciplinaire</h3>
-					<div style='display: flex'>
-						<div style='flex: 1'>
+					<div style='display: flex; justify-content: center'>
+						<div style='padding: 10px'>
 							<img data-src='assets/images/corinne.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
 							<h4>Corinne</h4>
 						</div>
-						<div style='flex: 1'>
+						<div style='padding: 10px'>
 							<img data-src='assets/images/florence.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
 							<h4>Florence</h4>
 						</div>
-						<div style='flex: 1'>
+						<div style='padding: 10px'>
 							<img data-src='assets/images/nadege.jpg' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
 							<h4>Nadège</h4>
 						</div>
-						<div style='flex: 1'>
+						<div style='padding: 10px'>
+							<img data-src='assets/images/nico.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
+							<h4>Nicolas</h4>
+						</div>
+					</div>
+					<div style='display: flex; justify-content: center'>
+						<div style='padding: 10px'>
 							<img data-src='assets/images/pierre.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
 							<h4>Pierre</h4>
 						</div>
-						<div style='flex: 1'>
+						<div style='padding: 10px'>
 							<img data-src='assets/images/stan.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
 							<h4>Stanislas</h4>
 						</div>
-						<div style='flex: 1'>
+						<div style='padding: 10px'>
 							<img data-src='assets/images/thomas.png' style='height: 150px; -webkit-filter: grayscale(1); border-radius: 75px;'/>
 							<h4>Thomas</h4>
 						</div>
@@ -214,27 +224,55 @@
 				<h2>Une aide à l'avant-vente</h2>
 				<section>
 					<h3>Application de démonstration</h3>
-					<p>Présentation de la démo, en GIF</p>
+					<div style='height: 400px'>
+						<video controls>
+							<source src="assets/videos/demo.webm" type="video/webm" />
+						</video>
+					</div>
 				</section>
 			</section>
-
 			<section>
-				<h2>La developper experience</h2>
+				<section>
+					<img data-src='assets/images/dx.png' style='border: none; box-shadow: none'/>
+				</section>
 				<section>
 					<h3>Showcase des composants</h3>
-					<p>Présentation du showcase</p>
+					<iframe src='assets/showcase/index.html' style='width: 1280px; height: 600px'>
+					</iframe>
 				</section>
 				<section>
 					<h3>Outils de développement</h3>
-					<p>Présentation de ESLint, Webpack</p>
+					<div style='display: flex'>
+						<div style='flex: 1'>
+							<img data-src='assets/images/eslint.png' style='border: none; box-shadow: none; height: 300px'/>
+							<h4>ESLint</h4>
+						</div>
+						<div style='flex: 1'>
+							<img data-src='assets/images/webpack.svg'style='border: none; box-shadow: none; height: 300px'/>
+							<h4>Webpack</h4>
+						</div>
+						<div style='flex: 1'>
+							<img data-src='assets/images/brunch.svg'style='border: none; box-shadow: none; height: 300px'/>
+							<h4>Brunch</h4>
+						</div>
+						<div style='flex: 1'>
+							<img data-src='assets/images/babel.png'style='border: none; box-shadow: none; height: 300px'/>
+							<h4>Babel</h4>
+						</div>
+					</div>
 				</section>
 				<section>
 					<h3>Documentation fonctionnelle</h3>
-					<p>Présentation de <b>Focus</b> doc, sous forme d'un GIF</p>
+					<div style='height: 400px'>
+						<video controls>
+							<source src="assets/videos/focus-doc.webm" type="video/webm" />
+						</video>
+					</div>
 				</section>
 				<section>
 					<h3>Documentation technique</h3>
-					<p>Présentation de la doc, en local</p>
+					<iframe src='assets/docs/index.html' style='width: 1280px; height: 600px'>
+					</iframe>
 				</section>
 			</section>
 
