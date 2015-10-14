@@ -4,7 +4,7 @@
   "description": "Final year internship presentation",
   "main": "index.js",
   "scripts": {
-    "install": "cp node_modules/reveal.js/css && cp node_modules/reveal.js/js && cp node_modules/reveal.js/lib && cp node_modules/reveal.js/plugin",
+    "install": "cp -r node_modules/reveal.js/css ./ && cp -r node_modules/reveal.js/js ./ && cp -r node_modules/reveal.js/lib ./ && cp -r node_modules/reveal.js/plugin ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
