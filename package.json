@@ -1,0 +1,23 @@
+{
+  "name": "internship-presentation",
+  "version": "0.1.0",
+  "description": "Final year internship presentation",
+  "main": "index.js",
+  "scripts": {
+    "install": "cp node_modules/reveal.js/css && cp node_modules/reveal.js/js && cp node_modules/reveal.js/lib && cp node_modules/reveal.js/plugin",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bernardstanislas/internship-presentation.git"
+  },
+  "author": "Stanislas Bernard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bernardstanislas/internship-presentation/issues"
+  },
+  "homepage": "https://github.com/Bernardstanislas/internship-presentation#readme",
+  "devDependencies": {
+    "reveal.js": "^3.1.0"
+  }
+}
